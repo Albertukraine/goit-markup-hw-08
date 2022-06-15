@@ -1,0 +1,126 @@
+.gallery__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+.gallery__item {
+  
+    position: relative;
+    
+    margin-right: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+
+    &:nth-child(3n) {
+     margin-right: 0px;}
+    &:nth-last-child(-n + 3) {
+     margin-bottom: 0px;}  
+    
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  &:hover .overlay{
+    transform: translateY(0);
+  }
+  &:hover .overlay__description {
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) 150ms;
+  }
+  
+  }
+
+  .overlay {
+  
+    z-index: 1;
+  
+    display: flex;
+    position: absolute;
+  
+    top: 0;
+    left: 0;
+  
+    width: 370px;
+    height: 294px;
+    background-color: rgba(33, 150, 243, 0.9);
+  
+    padding: 63px 24px 63px 24px;
+  
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &__description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.56;
+      letter-spacing: 0.03em;
+      color: var( --light-main-color);
+      margin: 0;
+    
+      opacity: 0;
+      
+    }
+   
+  }
+  
+  
+  .gallery__link {
+  
+    text-decoration: none;
+    color: var(--main-body-color);
+    background-color: var( --light-main-color);
+  
+  }
+  
+  .filter {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .card{
+
+    &__wrapper {
+      position: relative;
+      
+      z-index: 2;
+    
+      background-color: var( --light-main-color);
+    
+      width: 370px;
+      height: 110px;
+      padding-top: 20px;
+      padding-right: 24px;
+      padding-bottom: 20px;
+      padding-left: 24px;
+      border-bottom: 1px solid #eeeeee;
+      border-left: 1px solid #eeeeee;
+      border-right: 1px solid #eeeeee;
+    }
+
+    &__title {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 2;
+      letter-spacing: 0.06em;
+      margin-bottom: 4px;
+    }
+    &__description {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.88;
+      letter-spacing: 0.03em;
+      color: var(--dark-grey);
+      margin: 0;
+    }
+
+  }
+  
+  
+  
+  
+  
