@@ -1,4 +1,14 @@
+
 .about {
+  @media screen and (max-width: 480px) {
+    display: none;
+    
+  }
+}
+
+
+
+/*.about {
     
     padding-bottom: 94px;
   }
@@ -46,4 +56,4 @@
   
     position: absolute;
     bottom: 0;
-  }
+  }*/
