@@ -1,53 +1,92 @@
 .hero {
-  @media screen and (max-width: 480px){
-    width: 480px;
-    height: 400px;
-    background-image:  
-    linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4) ),
-    url(../Images/background/people.jpg);
-   
-    background-repeat: no-repeat;
+ 
+  height: 400px;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  text-align: center;
+
+  background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    margin-left: auto;
+    @include mq(mobile) {
+      max-width: 767px;
+    }
+
+    @include mq(tablet) {
+      max-width: 1199px;
+    }
+  
+    @include mq(desktop) {
+      max-width: 1600px;
+      height: 600px;
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
+  
+  
+    background-image: linear-gradient(to right,
+    rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4) ),
+    url('../Images/background/people_sm.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../Images/background/people_sm@2x.jpg');}
+
+
+    @include mq(tablet) {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../Images/background/people_mid.jpg');
+          
+      
+    @include mq(retina) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+              url('../Images/background/people_mid@2x.jpg');
+          }
+        }
+      
+        /*  Background for desktop */
+    @include mq(desktop) {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../Images/background/people.jpg');
+          
+      
+    @include mq(retina) {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+              url('../Images/background/people@2x.jpg');
+           
+          }
+        }    
+
+
+  &__title {
+    
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var( --light-main-color);
+
+
+    align-items: center;
+    max-width: 360px;
     margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
 
-    padding-top: 118px;
-
-  }
-
-
-    &__title {
-      width: 696px;
-      height: 120px;
-      font-style: normal;
-      font-weight: 900;
+    @include mq(desktop) {
+      max-width: 696px;
       font-size: 44px;
       line-height: 1.36;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: var( --light-main-color);
-      text-align: center;
-      margin-top: 0;
-      margin-left: auto;
-      margin-right: auto;
-      margin-bottom: 30px;
-      
-      @media screen and (max-width: 480px)
-      { width: 360px;
-        height: 84px;
-        font-size: 26px;
-        line-height: 1.61;
-      }
-
+    }
     }
 }
-
-
 /*.hero {
 
     height: 600px;

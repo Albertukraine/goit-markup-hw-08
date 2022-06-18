@@ -31,12 +31,12 @@
           </a>
           <ul class="list header__list">
             <li class="header__item">
-              <a class="header__link link" href="./index.html"
+              <a class="header__link link header__currentpage" href="./index.html"
                 >студия</a
               >
             </li>
             <li class="header__item">
-              <a class="header__link link header__currentpage" href="./portfolio.html">портфолио</a>
+              <a class="header__link link" href="./portfolio.html">портфолио</a>
             </li>
             <li class="header__item">
               <a class="header__link link" href="#">контакты</a>
@@ -60,10 +60,68 @@
             >
           </li>
         </ul>
+        <button 
+        class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./Images/sprite.svg#icon-header_menu_40px"></use>
+          </svg>
+        </button>
+       
+
+    
       </div>
     </header>
     <!--примеры работ-->
     <main>
+      <!-- MOBILE MENU-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button 
+        class="menu-toggle js-close-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./Images/sprite.svg#icon-header_close_40px"></use>
+          </svg>
+        </button>
+        <ul class="list mobile-menu__nav-list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./index.html"
+              >студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./portfolio.html">портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#">контакты</a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-menu__contact-list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__phone link" href="tel:0961111111"
+              >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+          </li>
+
+          <ul class="list mobile-menu__social">
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">Instagramm</a></li>
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">LinkedIn</a></li>
+          </ul>
+          
+        </ul>
+      </div>
       <!--Filter buttons-->
       <section class="filter">
         <div class="container">
@@ -300,8 +358,6 @@
             web<span class="logo--white">Studio</span></a
           >
         </div>
-        <h3 class="footer__title">присоединяйтесь</h3>
-        <h3 class="footer__title">подпишитесь на рассылку</h3>
         <address class="address">
           <div class="address__wrapper">
             <ul class="list">
@@ -326,6 +382,7 @@
               </li>
             </ul>
           </div>
+          <h3 class="footer__title">присоединяйтесь</h3>
           <div class="join">
             <ul class="list join__list">
               <li class="social__icon">
@@ -382,6 +439,7 @@
               </li>
             </ul>
           </div>
+          <h3 class="footer__title">подпишитесь на рассылку</h3>
           <div class="submit">
             <form>
               <input
@@ -404,5 +462,6 @@
         </address>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

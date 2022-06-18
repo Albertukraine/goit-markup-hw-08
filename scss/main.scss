@@ -2,6 +2,7 @@
 
 @import './utils/variables';
 @import './utils/visually-hidden';
+@import './utils/mixins';
 
 //base-styles
 
@@ -17,6 +18,7 @@
 @import './components/modal-form';
 @import './components/submit-form';
 @import './components/socials';
+@import './components/mobile-menu';
 
 
 
@@ -30,6 +32,7 @@
 @import './layouts/filter';
 @import './layouts/footer';
 
+//mixins
 
 
 

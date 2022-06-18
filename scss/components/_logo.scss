@@ -11,7 +11,7 @@
     text-transform: capitalize;
   
     margin-top: 0;
-    margin-right: 93px;
+    margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
 
@@ -21,13 +21,11 @@
     &--white {
       color: var( --light-main-color);
     }
+
+   
   }
   
 
-  .footer__logo {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 60px;
-  }
+  
   
   

@@ -59,9 +59,70 @@
             >
           </li>
         </ul>
+        <button 
+        class="menu-toggle js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./Images/sprite.svg#icon-header_menu_40px"></use>
+          </svg>
+        </button>
+       
+
+    
       </div>
     </header>
     <main>
+      <!-- MOBILE MENU-->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button 
+        class="menu-toggle js-close-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <svg width="40" height="40">
+            <use href="./Images/sprite.svg#icon-header_close_40px"></use>
+          </svg>
+        </button>
+        <ul class="list mobile-menu__nav-list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./index.html"
+              >студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="./portfolio.html">портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__link link" href="#">контакты</a>
+          </li>
+        </ul>
+
+        <ul class="list mobile-menu__contact-list">
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__phone link" href="tel:0961111111"
+              >
+              +38 096 111 11 11</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a class="mobile-menu__mail link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+          </li>
+
+          <ul class="list mobile-menu__social">
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">Twitter</a></li>
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">Instagramm</a></li>
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">Facebook</a></li>
+            <li class="mobile-menu__social-item"><a class="link mobile-menu__social-link" href="#">LinkedIn</a></li>
+          </ul>
+          
+        </ul>
+      
+        
+       
+      </div>
       <!--HERO-->
 
       <section class="hero">
@@ -172,13 +233,23 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./Images/team/mobile/Ihor_demianenko_sm.jpg  1x,
+                    ./Images/team/mobile/Ihor_demianenko_sm@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                />
               <img
                 class="team__image"
                 src="./Images/team/Ihor_demianenko.jpg"
                 alt="мужчина в очках"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+            </picture>
               <div class="team__card">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__description" lang="en">Product Designer</p>
@@ -241,13 +312,23 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+              <source
+              media="(max-width: 767px)"
+              srcset="
+                ./Images/team/mobile/olha_repina_sm.jpg  1x,
+                ./Images/team/mobile/olha_repina_sm@2x.jpg 2x
+              "
+              type="image/jpeg"
+            />
               <img
                 class="team__image"
                 src="./Images/team/olha_repina.jpg"
                 alt="блондинка в очках"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+            </picture>
               <div class="team__card">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__description" lang="en">Frontend Developer</p>
@@ -310,13 +391,23 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./Images/team/mobile/nikolay_tarasov_sm.jpg  1x,
+                  ./Images/team/mobile/nikolay_tarasov_sm@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
               <img
                 class="team__image"
                 src="./Images/team/nikolay_tarasov.jpg"
                 alt="шатен улыбается"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__description" lang="en">Marketing</p>
@@ -379,13 +470,23 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source
+                media="(max-width: 767px)"
+                srcset="
+                  ./Images/team/mobile/mikhail_ermakov_sm.jpg  1x,
+                  ./Images/team/mobile/mikhail_ermakov_sm@2x.jpg 2x
+                "
+                type="image/jpeg"
+              />
               <img
                 class="team__image"
                 src="./Images/team/mikhail_ermakov.jpg"
                 alt="мужчина в черной футболке"
-                width="270"
-                height="260"
+                width="450"
+                height="460"
               />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__description" lang="en">UI Designer</p>
@@ -451,9 +552,9 @@
         </div>
       </section>
       <!-- CLIENTS -->
-      <section class="clients">
+      <section class="client">
         <div class="container">
-          <h2 class="clients__title">Постоянные клиенты</h2>
+          <h2 class="client__title">Постоянные клиенты</h2>
           <ul class="list client__list">
             <li class="client__card">
               <a class="client__link" href="#" aria-label="логотип клиента">
@@ -510,8 +611,6 @@
             web<span class="logo--white">Studio</span></a
           >
         </div>
-        <h3 class="footer__title">присоединяйтесь</h3>
-        <h3 class="footer__title">подпишитесь на рассылку</h3>
         <address class="address">
           <div class="address__wrapper">
             <ul class="list">
@@ -536,6 +635,7 @@
               </li>
             </ul>
           </div>
+          <h3 class="footer__title">присоединяйтесь</h3>
           <div class="join">
             <ul class="list join__list">
               <li class="social__icon">
@@ -592,6 +692,7 @@
               </li>
             </ul>
           </div>
+          <h3 class="footer__title">подпишитесь на рассылку</h3>
           <div class="submit">
             <form>
               <input
@@ -691,5 +792,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
