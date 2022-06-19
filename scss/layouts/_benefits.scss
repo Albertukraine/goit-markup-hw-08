@@ -11,6 +11,7 @@
   }
   
   &__list {
+    list-style: none;
     @include mq(tablet){
       display: flex;
       flex-wrap: wrap;
