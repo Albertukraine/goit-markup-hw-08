@@ -1,7 +1,15 @@
 
 .benefits {
+  
   padding-top: 60px;
   padding-bottom: 60px;
+
+  &__list {
+    @include mq(tablet){
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 
   &__icon {
     background-color: var(--filter-btn-background-color);
@@ -9,15 +17,31 @@
     align-items: center;
     justify-content: center;
     border-radius: 4px;
+
+    @include mq(tablet){
+      width: 354px;
+      height: 251px;
+    }
+
+    @include mq(mobile){
     max-width: 450px;
     height: 120px;
+    }
+    
     margin-bottom: 30px;
+
+    
     
   }
+
+   
+    
+  
 
   &__card {
     max-width: 450px;
     margin-bottom: 30px;
+
   }
   &__card:last-child{
     margin-bottom: 0;

@@ -5,6 +5,10 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  @include mq(tablet){
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   &__title {
     width: 265px;
@@ -32,6 +36,9 @@
 
   &__image {
     margin-bottom: 0;
+    @include mq(tablet)
+    {width: 354px;
+    height: 374px;}
   }
   &__name {
     display: inline-block;
@@ -60,8 +67,17 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 30px;
     &:last-child{
-      margin-bottom: 0px;
+      @include mq(mobile){
+        margin-bottom: 0px;
+      }
     }  
+    
+  }
+  &__list {
+    @include mq(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
@@ -131,9 +147,5 @@
   }
   
   
- 
-  
-  
-  
-  
+
   */
