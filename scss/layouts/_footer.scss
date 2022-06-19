@@ -6,11 +6,16 @@
   padding-top: 60px;
   padding-bottom: 60px;
   align-content: center;
+  @include mq(tablet){
+    padding-left: 76px;
+    padding-right: 76px;
+  }
   
-
+  
   &__logo {
     text-align: center;
     margin-bottom: 20px;
+    @include mq(desktop){text-align: left;}
    
   }
 
@@ -25,6 +30,7 @@
     margin-bottom: 20px;
 
     text-align: center;
+    @include mq(desktop){text-align: left;}
   }
 
   &__contact {
@@ -46,6 +52,10 @@
 }
 
 .address {
+  @include mq(tablet){
+    display: flex;
+    flex-wrap: wrap;
+  }
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -56,8 +66,6 @@
 
   text-align: center;
 
-  
-
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -65,13 +73,30 @@
 
   &__wrapper {
     margin-bottom: 60px;
+    @include mq(tablet){
+      width: 232px;
+    }
+    
+   
   }  
+  &__wrapper .list {
+    }
+
+  &__list {list-style: none;}  
+
+  &__item {
+    @include mq(tablet) {margin-bottom:8px;}
+  }
+  @include mq(desktop){text-align: left;}
 
 }
 
+
 .join {
   margin-bottom: 60px;
-
+  @include mq(tablet){
+    margin-left: auto;
+  }
 
   &__list{
     display: flex;
@@ -100,6 +125,8 @@
     .social__icon:last-child{margin-right: 0;}
   }
 }
+
+
 
 
 

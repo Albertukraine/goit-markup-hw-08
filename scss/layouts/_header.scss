@@ -16,6 +16,10 @@
         & .list:last-child {
             margin-left: auto;
           }
+        @include mq(tablet){height: 80px;}
+        & .logo {
+          @include mq(tablet){margin-right: 80px;}
+        }
       } 
       
     &__list {
@@ -26,8 +30,32 @@
             &:last-child {
                 margin-right: 0;
           }
+          @include mq(not-desktop){margin-right: 0;
+          margin-bottom: 10px;
+        &:last-child{margin-bottom: 0;}}
+        @include mq(desktop){
+          margin-right: 30px;
+        }
       }
+      @include mq(tablet){
+        display: block;
+        margin-left:auto;
+      }
+      @include mq(desktop){
+        display: flex;
+      }
+      
       }  
+    &__nav {
+      display: flex;
+        margin: 0;
+        .header__item {
+            margin-right: 50px;
+            &:last-child {
+                margin-right: 0;
+          }
+      }
+    }  
 
       &__currentpage {
         color: var(--accent-color);

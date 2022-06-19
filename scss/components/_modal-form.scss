@@ -5,8 +5,10 @@
   top:50%;
   left:50%;
   transform: translate(-50%, -50%);
+  width:450px;
+@include mq(desktop){
+  width: 528px;}
 
-  width: 528px;
   background-color: var( --light-main-color);
   border-radius: 4px;
 
@@ -118,7 +120,8 @@
   .form-policy-description{
     position: relative;
     display: inline-block;
-    font-size: 14px;
+    font-size: 12px;
+    @include mq(desktop){font-size: 14px;}
     font-weight: 400px;
     line-height: 1.71;
     color: var(--dark-grey);

@@ -11,6 +11,10 @@
 
     @media screen and (min-width: 768px) 
       {display: flex;} 
+
+    @include mq(desktop){
+      align-items: baseline;
+    }
   }
 
 
@@ -26,4 +30,5 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
 }

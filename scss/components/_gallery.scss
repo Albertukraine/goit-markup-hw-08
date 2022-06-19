@@ -20,6 +20,9 @@
     position: relative;
     overflow: hidden;
     margin-bottom: 30px;
+    @include mq(tablet){
+      &:nth-child(odd){margin-right: 30px;}
+    &:last-child{margin-bottom: 0;}}
 @include mq(desktop){
     margin-right: 30px;
     margin-bottom: 30px;
@@ -45,6 +48,15 @@
   
   }
 
+  .gallery__img-box {
+    @include mq(tablet){
+      width: 354px;
+      height: 294px;
+    position: relative;
+    overflow: hidden;
+    }
+  }
+
   .overlay {
   
     z-index: 1;
@@ -54,8 +66,11 @@
   
     top: 0;
     left: 0;
-  
-    width: 450px;
+    @include mq(tablet){
+      width: 354px;
+    }
+  @include mq(desktop){
+    width: 450px;}
     height: 294px;
     background-color: rgba(33, 150, 243, 0.9);
   
@@ -108,6 +123,8 @@
       border-left: 1px solid #eeeeee;
       border-right: 1px solid #eeeeee;
       @include mq(desktop){width: 370px;}
+      @include mq(tablet){width: 354px;
+      height: 146px;}
     }
 
     &__title {

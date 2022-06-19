@@ -19,16 +19,27 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    @include mq(desktop){
+      flex-wrap: nowrap;
+    }
   
   }
 
   &__card {
-    width: calc((100% - 30px) / 2);
+    
     margin-right: 30px;
     margin-bottom: 30px;
 
+
+@include mq(not-desktop){
+    width: calc((100% - 30px) / 2);
     &:nth-child(even){margin-right: 0px;}
     &:nth-child(n+5) {margin-bottom: 0px;}
+}
+
+   
+
+    
   
   }
 
@@ -41,6 +52,11 @@
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+
+    @include mq(desktop){
+    width: 170px;
+    margin-right: 0;
+    }
   
     
   

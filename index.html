@@ -28,7 +28,7 @@
           <a class="link logo" aria-label="Логотип" href="./index.html"
             >web<span class="logo--black">Studio</span>
           </a>
-          <ul class="list header__list">
+          <ul class="list header__nav">
             <li class="header__item">
               <a class="header__link link header__currentpage" href="./index.html"
                 >студия</a
@@ -234,11 +234,24 @@
           <ul class="list team__list">
             <li class="team__item">
               <picture>
+                <source 
+                media="(min-width:1200px)"
+                srcset="./Images/team/Ihor_demianenko.jpg 1x,
+                ./Images/team/Ihor_demianenko@2x.jpg 2x"
+                type="image/jpeg"
+                />
+
+                <source 
+                media="(min-width:768px)"
+                srcset="./Images/team/tablet/Ihor_demianenko_mid.jpg 1x,
+                ./Images/team/tablet/Ihor_demianenko_mid@2x.jpg 2x"
+                type="image/jpeg"
+                />
                 <source
                   media="(max-width: 767px)"
                   srcset="
                     ./Images/team/mobile/Ihor_demianenko_sm.jpg  1x,
-                    ./Images/team/mobile/Ihor_demianenko_sm@2x.jpg 2x
+                    ./Images/team/tablet/Ihor_demianenko_mid@2x.jpg 2x
                   "
                   type="image/jpeg"
                 />
@@ -313,6 +326,20 @@
             </li>
             <li class="team__item">
               <picture>
+
+                <source 
+                media="(min-width:1200px)"
+                srcset="./Images/team/olha_repina.jpg 1x,
+                ./Images/team/olha_repina@2x.jpg 2x"
+                type="image/jpeg"
+                />
+
+                <source 
+                media="(min-width:768px)"
+                srcset="./Images/team/tablet/olha_repina_mid.jpg 1x,
+                ./Images/team/tablet/olha_repina_mid@2x.jpg 2x"
+                type="image/jpeg"
+                />
               <source
               media="(max-width: 767px)"
               srcset="
@@ -392,6 +419,20 @@
             </li>
             <li class="team__item">
               <picture>
+
+                <source 
+                media="(min-width:1200px)"
+                srcset="./Images/team/nikolay_tarasov.jpg 1x,
+                ./Images/team/nikolay_tarasov@2x.jpg 2x"
+                type="image/jpeg"
+                />
+                <source 
+                media="(min-width:768px)"
+                srcset="./Images/team/tablet/nikolay_tarasov_mid.jpg 1x,
+                ./Images/team/tablet/nikolay_tarasov_mid@2x.jpg 2x"
+                type="image/jpeg"
+                />
+              <source
                 <source
                 media="(max-width: 767px)"
                 srcset="
@@ -471,6 +512,19 @@
             </li>
             <li class="team__item">
               <picture>
+
+                <source 
+                media="(min-width:1200px)"
+                srcset="./Images/team/mikhail_ermakov.jpg 1x,
+                ./Images/team/mikhail_ermakov@2x.jpg 2x"
+                type="image/jpeg"
+                />
+                <source 
+                media="(min-width:768px)"
+                srcset="./Images/team/tablet/mikhail_ermakov_mid.jpg 1x,
+                ./Images/team/tablet/mikhail_ermakov_mid@2x.jpg 2x"
+                type="image/jpeg"
+                />
                 <source
                 media="(max-width: 767px)"
                 srcset="
@@ -606,14 +660,15 @@
 
     <footer class="footer">
       <div class="container">
-        <div class="footer__logo">
-          <a class="link logo" href="./index.html">
-            web<span class="logo--white">Studio</span></a
-          >
-        </div>
+       
         <address class="address">
           <div class="address__wrapper">
-            <ul class="list">
+            <div class="footer__logo">
+              <a class="link logo" href="./index.html">
+                web<span class="logo--white">Studio</span></a
+              >
+            </div>
+            <ul class="address__list">
               <li class="address__item">
                 <a
                   class="link address"
@@ -635,8 +690,9 @@
               </li>
             </ul>
           </div>
-          <h3 class="footer__title">присоединяйтесь</h3>
+          
           <div class="join">
+            <h3 class="footer__title">присоединяйтесь</h3>
             <ul class="list join__list">
               <li class="social__icon">
                 <a
@@ -692,17 +748,19 @@
               </li>
             </ul>
           </div>
-          <h3 class="footer__title">подпишитесь на рассылку</h3>
+          
           <div class="submit">
-            <form>
+            <h3 class="footer__title">подпишитесь на рассылку</h3>
+            <form class="subscribe__form-footer">
+              <label class="subscribe-form__area">
               <input
                 type="email"
                 placeholder="E-mail"
                 class="mail-form-footer"
                 name="email-footer"
               />
-            </form>
-            <button
+            </label>
+              <button
               class="footer__btn btn modal__btn"
               type="submit"
             >
@@ -711,6 +769,7 @@
                 <use href="./Images/sprite.svg#icon_send"></use>
               </svg>
             </button>
+            </form>
           </div>
         </address>
       </div>

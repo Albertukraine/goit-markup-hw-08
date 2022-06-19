@@ -5,6 +5,9 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+  @include mq(desktop)
+  {padding-top: 94px;
+  padding-bottom: 94px;}
 
  
 
@@ -20,6 +23,12 @@
     margin-right: auto;
     margin-bottom: 30px;
     text-align: center;
+
+    @include mq(desktop){
+      margin-bottom: 50px;
+      margin-top: 0;
+      font-size: 36px;
+    }
   }
   &__description {
     display: inline-block;
@@ -37,7 +46,13 @@
     @include mq(tablet)
     {width: 354px;
     height: 374px;}
+
+    @include mq(desktop){
+      width: 270px;
+      height: 260px;
+    }
   }
+
   &__name {
     display: inline-block;
     font-style: normal;
@@ -67,6 +82,9 @@
     &:last-child{
       @include mq(mobile){
         margin-bottom: 0px;
+      }
+      @include mq(tablet){
+        margin-bottom: 30px;
       }
     }  
     

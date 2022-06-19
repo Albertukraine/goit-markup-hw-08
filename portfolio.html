@@ -29,14 +29,14 @@
           <a class="link logo" aria-label="Логотип" href="./index.html"
             >web<span class="logo--black">Studio</span>
           </a>
-          <ul class="list header__list">
+          <ul class="list header__nav">
             <li class="header__item">
-              <a class="header__link link header__currentpage" href="./index.html"
+              <a class="header__link link" href="./index.html"
                 >студия</a
               >
             </li>
             <li class="header__item">
-              <a class="header__link link" href="./portfolio.html">портфолио</a>
+              <a class="header__link link header__currentpage" href="./portfolio.html">портфолио</a>
             </li>
             <li class="header__item">
               <a class="header__link link" href="#">контакты</a>
@@ -151,10 +151,14 @@
           <ul class="listlink list gallery__list">
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
+                   <!--desktop-image-->
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img.jpg 1x,
-                  ./Images/portfolio/img@2x.jpg 2x"/>
+                  srcset="./Images/portfolio/img.jpg 1x,
+                  ./Images/portfolio/img@2x.jpg 2x"
+                  type="image/jpeg"
+                  />
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
                  srcset="
@@ -162,6 +166,7 @@
                  ./Images/portfolio/tablet/img_mid@2x.jpg 2x"
                  type="image/jpeg"
                  />
+                 <!--mobile-image-->
                   <source
                   media="(max-width: 767px)"
                   srcset="
@@ -177,6 +182,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Технокряк</h3>
                   <p class="card__description">Веб-сайт</p>
@@ -192,10 +198,12 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-9.jpg 1x,
-                  ./Images/portfolio/img-9@2x.jpg 2x"/>
+                  srcset="./Images/portfolio/img-2.jpg 1x,
+                  ./Images/portfolio/img-2@2x.jpg 2x"
+                  type="image/jpeg"/>
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
                  srcset="
@@ -217,7 +225,7 @@
                   width="450"
                   height="294"
                 />
-              </picture>
+              </picture></div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Постер New Orlean vs Golden Star</h3>
                   <p class="card__description">Дизайн</p>
@@ -233,9 +241,10 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-3.jpg 1x,
+                  srcset="./Images/portfolio/img-3.jpg 1x,
                   ./Images/portfolio/img-3@2x.jpg 2x"/>
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
@@ -259,6 +268,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Ресторан Seafood</h3>
                   <p class="card__description">Приложение</p>
@@ -274,9 +284,10 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-4.jpg 1x,
+                  srcset="./Images/portfolio/img-4.jpg 1x,
                   ./Images/portfolio/img-4@2x.jpg 2x"/>
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
@@ -300,6 +311,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Проект Prime</h3>
                   <p class="card__description">Маркетинг</p>
@@ -315,9 +327,10 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-5.jpg 1x,
+                  srcset="./Images/portfolio/img-5.jpg 1x,
                   ./Images/portfolio/img-5@2x.jpg 2x"/>
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
@@ -341,6 +354,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Проект Boxes</h3>
                   <p class="card__description">Приложение</p>
@@ -356,10 +370,13 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-6.jpg 1x,
-                  ./Images/portfolio/img-6@2x.jpg 2x"/>
+                  srcset="./Images/portfolio/img-6.jpg 1x,
+                  ./Images/portfolio/img-6@2x.jpg 2x"
+                  type="image/jpeg"
+                  />
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
                  srcset="
@@ -382,6 +399,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Inspiration has no Borders</h3>
                   <p class="card__description">Веб-сайт</p>
@@ -397,9 +415,10 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-7.jpg 1x,
+                  srcset="./Images/portfolio/img-7.jpg 1x,
                   ./Images/portfolio/img-7@2x.jpg 2x"/>
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
@@ -423,6 +442,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Издание Limited Edition</h3>
                   <p class="card__description">Дизайн</p>
@@ -438,9 +458,10 @@
             </li>
             <li class="gallery__item">
               <a class="gallery__link" href="#">
+                <div class="gallery__img-box">
                  <picture>
                   <source media="(min-width:1200px)"
-                  srcset="=./Images/portfolio/img-8.jpg 1x,
+                  srcset="./Images/portfolio/img-8.jpg 1x,
                   ./Images/portfolio/img-8@2x.jpg 2x"/>
                   <!--tablet-image-->
                  <source media="(min-width:768px)"
@@ -464,6 +485,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Проект LAB</h3>
                   <p class="card__description">Маркетинг</p>
@@ -480,12 +502,14 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
 
-
+                <div class="gallery__img-box">
                  <picture>
                    <!--desktop-image-->
                   <source media="(min-width:1200px)"
-                   srcset="=./Images/portfolio/img-9.jpg 1x,
-                   ./Images/portfolio/img-9@2x.jpg 2x"/>
+                   srcset="./Images/portfolio/img-9.jpg 1x,
+                   ./Images/portfolio/img-9@2x.jpg 2x"
+                   type="image/jpeg"
+                   />
                    <!--tablet-image-->
                   <source media="(min-width:768px)"
                   srcset="
@@ -509,6 +533,7 @@
                   height="294"
                 />
               </picture>
+            </div>
                 <div class="card__wrapper">
                   <h3 class="card__title">Growing Business</h3>
                   <p class="card__description">Приложение</p>
@@ -529,14 +554,15 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
-        <div class="footer__logo">
-          <a class="link logo" href="./index.html">
-            web<span class="logo--white">Studio</span></a
-          >
-        </div>
+       
         <address class="address">
           <div class="address__wrapper">
-            <ul class="list">
+            <div class="footer__logo">
+              <a class="link logo" href="./index.html">
+                web<span class="logo--white">Studio</span></a
+              >
+            </div>
+            <ul class="address__list">
               <li class="address__item">
                 <a
                   class="link address"
@@ -558,8 +584,9 @@
               </li>
             </ul>
           </div>
-          <h3 class="footer__title">присоединяйтесь</h3>
+          
           <div class="join">
+            <h3 class="footer__title">присоединяйтесь</h3>
             <ul class="list join__list">
               <li class="social__icon">
                 <a
@@ -615,17 +642,19 @@
               </li>
             </ul>
           </div>
-          <h3 class="footer__title">подпишитесь на рассылку</h3>
+          
           <div class="submit">
-            <form>
+            <h3 class="footer__title">подпишитесь на рассылку</h3>
+            <form class="subscribe__form-footer">
+              <label class="subscribe-form__area">
               <input
                 type="email"
                 placeholder="E-mail"
                 class="mail-form-footer"
                 name="email-footer"
               />
-            </form>
-            <button
+            </label>
+              <button
               class="footer__btn btn modal__btn"
               type="submit"
             >
@@ -634,6 +663,7 @@
                 <use href="./Images/sprite.svg#icon_send"></use>
               </svg>
             </button>
+            </form>
           </div>
         </address>
       </div>
@@ -641,3 +671,6 @@
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
+
+
+
