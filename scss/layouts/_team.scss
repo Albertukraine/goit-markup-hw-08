@@ -5,10 +5,8 @@
   padding-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
-  @include mq(tablet){
-    display: flex;
-    flex-wrap: wrap;
-  }
+
+ 
 
   &__title {
     width: 265px;
@@ -75,15 +73,12 @@
   }
   &__list {
     @include mq(tablet) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 }
-
-
-
-
+}
 
 /*.team {
     display: flex;
@@ -149,3 +144,6 @@
   
 
   */
+
+
+
