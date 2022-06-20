@@ -6,10 +6,17 @@
   padding-top: 60px;
   padding-bottom: 60px;
   align-content: center;
-  @include mq(tablet){
-    padding-left: 76px;
-    padding-right: 76px;
+  
+
+  &__container{
+    @include mq(tablet-only) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-around;
+    }
   }
+  
   
   
   &__logo {
@@ -66,6 +73,8 @@
 
   text-align: center;
 
+  justify-content: space-around;
+
   &:hover,
   &:focus {
     color: var(--accent-color);
@@ -73,6 +82,7 @@
 
   &__wrapper {
     margin-bottom: 60px;
+    @include mq(desktop){margin-bottom: 0;}
     @include mq(tablet){
       width: 232px;
     }
@@ -94,9 +104,7 @@
 
 .join {
   margin-bottom: 60px;
-  @include mq(tablet){
-    margin-left: auto;
-  }
+  
 
   &__list{
     display: flex;

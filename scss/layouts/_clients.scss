@@ -3,6 +3,7 @@
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include mq(desktop) {padding-top: 94px;}
 
   &__title {
     
@@ -14,6 +15,10 @@
     color: var(--main-body-color);
     text-align: center;
     margin-bottom: 30px;
+    @include mq(desktop){
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -30,16 +35,28 @@
     margin-right: 30px;
     margin-bottom: 30px;
 
+    @include mq(mobile) {
+      width: calc((100%-30px));
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-@include mq(not-desktop){
-    width: calc((100% - 30px) / 2);
-    &:nth-child(even){margin-right: 0px;}
-    &:nth-child(n+5) {margin-bottom: 0px;}
+    @include mq(tablet) {
+      width: calc((100% - 60px) / 3);
+      &:nth-child(3n){margin-right: 0px;}
+    }
+
+
+     @include mq(desktop){
+     width: calc((100% - 30px) / 2);
+     &:nth-child(even){margin-right: 0px;}
+     &:nth-child(n+5) {margin-bottom: 0px;}
 }
 
-   
 
-    
+
+
+
   
   }
 

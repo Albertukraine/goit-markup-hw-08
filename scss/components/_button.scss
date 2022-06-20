@@ -101,7 +101,11 @@
     }  
     @include mq(mobile){height: 38px;
     margin-right: 8px;
-  margin-bottom: 15px;}
+    margin-bottom: 15px;}
+
+    @include mq(tablet){
+      margin-bottom: 0;
+    }
 
 }
 

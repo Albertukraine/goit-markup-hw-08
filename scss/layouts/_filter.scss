@@ -1,6 +1,13 @@
 .filter__list {
 display: flex;
 flex-wrap: wrap;
+@include mq(tablet){
+  justify-content: center;
+  margin-bottom: 30px;
+}
+@include mq(desktop){
+  margin-bottom: 50px;
+}
 }
 
 /*.filter__list {
